@@ -16,7 +16,7 @@ header{
 
 .inputs{
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 75px;
 }
 
 .howmuch-input{
@@ -78,10 +78,4 @@ button:hover{
     height: 24px;
     margin-right: 5px;
     cursor: pointer;
-}
-
-.summa{
-    margin-bottom: 20px;
-    font-size: 24px;
-    text-align: right;
 }
