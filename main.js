@@ -54,12 +54,17 @@
     xhr.send(JSON.stringify(body));
 
     infoArray.push(body);
-
     render(body.wherePay, body.createDate, body.howMuchPay);
     
 }
 
 render = (wherePay, today, howMuchPay, index) => {
+
+  const body1 = {
+    wherePay: wherePay,
+    createDate: today,
+    howMuchPay: howMuchPay,
+  }
 
     let summa = document.getElementById('summa');
     summa.innerText = "Итого: " + `${sum}` + " р.";
@@ -86,11 +91,11 @@ render = (wherePay, today, howMuchPay, index) => {
     const deleteBtn = document.getElementById(`del-${index}`);
 
     editBtn.onclick = function () {
-      onEditTask(index);
+      onEditTask(index, body1);
     }
 
     deleteBtn.onclick = function () {
-      onDeleteTask(index);
+      onDeleteTask(index, body1);
     }
 
   } else if (!wherePay || !howMuchPay) {
@@ -100,17 +105,21 @@ render = (wherePay, today, howMuchPay, index) => {
   }
 }
 
-  onDeleteTask = () => {
+  onDeleteTask = (index, body1) => {
 
-    xhr.open('DELETE', 'http://localhost:3000/delete');
-    xhr.send();
+    console.log('delete task', index, body1);
+
+    // xhr.open('DELETE', 'http://localhost:3000/delete');
+    // xhr.send();
 
   }
 
-  onEditTask = () => {
+  onEditTask = (index, body1) => {
 
-    xhr.open('POST', 'http://localhost:3000/edit');
-    xhr.setRequestHeader('Content-Type', 'application/json');
+    console.log('edit task', index, body1);
 
-    xhr.send();
+    // xhr.open('POST', 'http://localhost:3000/edit');
+    // xhr.setRequestHeader('Content-Type', 'application/json');
+    //
+    // xhr.send();
   }
