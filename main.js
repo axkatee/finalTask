@@ -100,14 +100,14 @@ render = (wherePay, today, howMuchPay, index) => {
   }
 }
 
-  onDeleteTask = (index) => {
+  onDeleteTask = () => {
 
     xhr.open('DELETE', 'http://localhost:3000/delete');
     xhr.send();
 
   }
 
-  onEditTask = (index) => {
+  onEditTask = () => {
 
     xhr.open('POST', 'http://localhost:3000/edit');
     xhr.setRequestHeader('Content-Type', 'application/json');
