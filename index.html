@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class = "header">
+        <header>Учет моих расходов</header>
+    </div>
+    <div class = "inputs">
+        <div class = "where-pay">
+            <p>Куда было потрачено: </p>
+            <input placeholder="Куда было потрачено" type="text" class = "wherepay-input" id = "wherepay-input">
+        </div>
+        <div class = "howmuch-pay">
+            <p>Сколько было потрачено: </p>
+            <input placeholder="Сколько было потрачено" type="number" class = "howmuch-input" id = "howmuch-input">
+        </div>
+        <button id = "add-button" onclick = "addInfo()">Добавить</button>
+    </div>
+    <div id = "summa">
+
+    </div>
+    <div class = "block" id = "block">
+
+    </div>
+    <script src = "main.js"></script>
+</body>
+</html>

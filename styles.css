@@ -1,0 +1,81 @@
+body{
+    background-color: #d8ecf8;
+    font-family: Roboto;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: grab;
+}
+
+header{
+    font-style: italic;
+    font-size: 30px;
+    margin: 30px 0 20px 0;
+}
+
+.inputs{
+    display: flex;
+    margin-bottom: 75px;
+}
+
+.howmuch-input{
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.wherepay-input{
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 220px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+button{
+    height: 43px;
+    align-self: flex-end;
+    background-color: #4d947f;
+    border: none;
+    border-radius: 5px;
+    padding: 0 15px 0 15px;
+}
+
+button:hover{
+    background-color: #386c5c;
+    cursor: pointer;
+}
+
+.content-item{
+    display: flex;
+    font-size: 24px;
+    align-items: self-end;
+    justify-content: space-between;
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+.item-buttons{
+    display: flex;
+    margin-left: 30px;
+}
+
+.item-price{
+    display: flex;
+}
+
+.edit, .remove{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    cursor: pointer;
+}
